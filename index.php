@@ -1,9 +1,9 @@
 <?php
 if (isset($_POST['name'])){
 
-$server = "sql310.infinityfree.com";
-$username = "if0_38457033";
-$password = "03NHQzcMhN1cKf";
+$server = "enter your server";
+$username = "enter username";
+$password = "password";
 
 $con = mysqli_connect($server, $username, $password);
 
@@ -20,7 +20,7 @@ $budget = $_POST['budget'];
 $people = $_POST['people'];
 
 
-$sql = "INSERT INTO `if0_38457033_traveldb`.`travel` (`SR.NO`, `NAME`, `PHONE`, `EMAIL`, `PLACE`, `BUDGET`, `PEOPLE`, `DATE`) 
+$sql = "database name`.`folder name` (`SR.NO`, `NAME`, `PHONE`, `EMAIL`, `PLACE`, `BUDGET`, `PEOPLE`, `DATE`) 
 VALUES (null, '$name', '$phone', '$email','$place','$budget','$people', current_timestamp())";
 
 if ($con->query($sql) == true){
